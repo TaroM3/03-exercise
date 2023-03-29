@@ -34,6 +34,7 @@ class ProductManager {
             this.#products.splice(this.#products.findIndex(p => p.code === code) , 1)
             console.log("Product ("+ code +") has been deleted")
         }
+
     }
 
     //It returns all the products 
@@ -128,15 +129,17 @@ class ProductManager {
 
 }
 
-const manager = new ProductManager()
-manager.addProduct("Tshirt", "Black tshirt", 25, "./thumbnails/thumbnail1.png", 2400, 20)
-console.log(manager.getProducts())
-manager.addProduct("Tshirt", "Black tshirt", 40, "./thumbnails/thumbnail2.png", 2401, 20)
-console.log(manager.getProducts())
-manager.setDescription(2401, "White Tshirt")
-console.log(manager.getProducts())
-manager.deleteProductByCode(2400)
-console.log(manager.getProduct(2400))
-console.log(manager.getDescription(2401))
-console.log(manager.getPrice(2403))
-console.log(manager.getProducts())
+
+
+//const manager = new ProductManager()
+//manager.addProduct("Tshirt", "Black tshirt", 25, "./thumbnails/thumbnail1.png", 2400, 20)
+//console.log(manager.getProducts())
+//manager.addProduct("Tshirt", "Black tshirt", 40, "./thumbnails/thumbnail2.png", 2401, 20)
+//console.log(manager.getProducts())
+//manager.setDescription(2401, "White Tshirt")
+//console.log(manager.getProducts())
+//manager.deleteProductByCode(2400)
+//console.log(manager.getProduct(2400))
+//console.log(manager.getDescription(2401))
+//console.log(manager.getPrice(2403))
+//console.log(manager.getProducts())
